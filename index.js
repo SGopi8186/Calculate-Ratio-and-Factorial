@@ -1,10 +1,10 @@
-let ratio = require("../ratio/index.js");
-let factorial = require("../factorial/index.js");
+const ratioOfTwoNumbers = require("../ratio/index.js");
+const factorialOfNumber = require("../factorial/index.js");
 
-let ratioAndFactorial = (num1, num2, num3) => {
-  const d = ratio(num1, num2);
-  const e = factorial(num3);
+const ratioAndFactorial = (num1, num2, num3) => {
+  const ratio = ratioOfTwoNumbers(num1, num2);
+  const factorial = factorialOfNumber(num3);
 
-  return { d, e };
+  return { ratio, factorial };
 };
 module.exports = ratioAndFactorial;
